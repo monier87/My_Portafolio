@@ -1,0 +1,14 @@
+<html class="no-js" lang="en">
+    <title>{% block title %}{% endblock %} | Mi Web Personal</title>
+<body>
+    <h1> Contenido </h1>
+        <ul>
+             <li><a href={% url 'home' %}> Portada</a></li>
+             <li><a href={% url 'contacto' %}> Contacto</a></li>
+             <li><a href={% url 'portafolio' %}> Portafolio</a></li>
+             <li><a href={% url 'about' %}> Acerca de..</a></li>
+        </ul>
+        {% block content %} {% endblock %}
+</body>
+
+</html>
