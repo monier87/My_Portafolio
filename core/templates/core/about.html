@@ -1,9 +1,25 @@
 {% extends "core/base.html" %} 
 
 {% block title %} Acerca de.... {% endblock %}
-{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+
 {% block content %} 
 
-    Acerca de..... 
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/Foto Mia.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Carlos David Monier</h2>   
+    <p>Nacido en Cuba en la provincia de Santiago de Cuba el 17 de Noviembre de 1987.</p>
+    <p>Soy Ingeniero Informático, y poseo habilidades en el Lenguaje de Prgramacion Python</p>
+    <p>Conocimientos en Git, GitHub, Bases de Datos y Blockchain</p>
+</div>
+
 
 {% endblock %}
